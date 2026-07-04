@@ -80,6 +80,11 @@ section{padding:92px 0;position:relative;z-index:1}
 .card .links{margin-top:20px;display:flex;gap:18px}
 .card .links a{color:var(--a1);font-weight:600;font-size:14px}
 .card .links a:hover{text-decoration:underline}
+.avatar{width:104px;height:104px;border-radius:50%;object-fit:cover;padding:3px;background:var(--grad);box-shadow:0 12px 44px rgba(34,211,238,.28);margin-bottom:18px;display:block;animation:rise 1s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(16px) scale(.94)}to{opacity:1;transform:none}}
+.thumb{height:118px;border-radius:14px;margin-bottom:6px;display:flex;align-items:flex-end;justify-content:space-between;padding:14px 18px;position:relative;overflow:hidden}
+.thumb .big{font-family:'Space Grotesk';font-weight:700;font-size:58px;color:rgba(255,255,255,.18);line-height:1}
+.thumb .ic{font-size:30px}
 .chips{display:flex;flex-wrap:wrap;gap:12px}
 .chip{padding:11px 18px;border:1px solid var(--line);border-radius:12px;background:var(--card);font-family:'Space Grotesk';font-weight:500;font-size:15px;transition:transform .2s,border-color .2s,color .2s}
 .chip:hover{transform:translateY(-4px);border-color:var(--a1);color:var(--a1)}
@@ -110,6 +115,7 @@ footer a:hover{color:var(--a1)}
 </div></nav>
 
 <header id="top"><div class="wrap">
+  <img class="avatar" src="assets/headshot.jpg" alt="Yusuf Hakeem">
   <span class="pill"><span class="dot"></span> Available for work · Manama, Bahrain · No sponsorship needed</span>
   <p class="hero-kick">Software Developer</p>
   <h1>Yusuf Hakeem</h1>
@@ -143,19 +149,19 @@ footer a:hover{color:var(--a1)}
   <p class="sub">Every project is real, tested, and on GitHub — with a slide walkthrough for the story behind it.</p></div>
   <div class="cards">
     <article class="card reveal">
-      <div class="num">01</div><span class="tag">Backend · Node.js / Express</span>
+      <div class="thumb" style="background:linear-gradient(135deg,#0e7490,#155e75)"><span class="big">01</span><span class="ic">⚙️</span></div><span class="tag">Backend · Node.js / Express</span>
       <h3>Shift Log REST API</h3>
       <p>A RESTful API with full CRUD, input validation, category &amp; priority filtering, and correct HTTP status codes. Automated test suite at 100% — built to swap in MongoDB with zero route changes.</p>
       <div class="links"><a href="https://github.com/ysa7799/software-engineering-portfolio/tree/main/shift-log-api" target="_blank" rel="noopener">Code →</a><a href="https://github.com/ysa7799/software-engineering-portfolio/blob/main/shift-log-api/Shift_Log_API.pptx" target="_blank" rel="noopener">Slides →</a></div>
     </article>
     <article class="card reveal">
-      <div class="num">02</div><span class="tag">Frontend · HTML / CSS / JS</span>
+      <div class="thumb" style="background:linear-gradient(135deg,#6d28d9,#4c1d95)"><span class="big">02</span><span class="ic">🖥️</span></div><span class="tag">Frontend · HTML / CSS / JS</span>
       <h3>Incident Report Web App</h3>
       <p>A responsive single-page app to log, filter, and manage incidents. Live search, high-priority counter, and localStorage persistence — zero dependencies, no framework, clean separation of concerns.</p>
       <div class="links"><a href="https://github.com/ysa7799/software-engineering-portfolio/tree/main/incident-report-webapp" target="_blank" rel="noopener">Code →</a><a href="https://github.com/ysa7799/software-engineering-portfolio/blob/main/incident-report-webapp/Incident_Report_WebApp.pptx" target="_blank" rel="noopener">Slides →</a></div>
     </article>
     <article class="card reveal">
-      <div class="num">03</div><span class="tag">Python · CLI</span>
+      <div class="thumb" style="background:linear-gradient(135deg,#0f766e,#115e59)"><span class="big">03</span><span class="ic">🐍</span></div><span class="tag">Python · CLI</span>
       <h3>Visitor Check-in Register</h3>
       <p>A command-line visitor register with JSON persistence and defensive logic that blocks invalid double check-outs. Unit-tested core behaviour, pure standard library — runs anywhere Python does.</p>
       <div class="links"><a href="https://github.com/ysa7799/software-engineering-portfolio/tree/main/visitor-checkin-cli" target="_blank" rel="noopener">Code →</a><a href="https://github.com/ysa7799/software-engineering-portfolio/blob/main/visitor-checkin-cli/Visitor_Checkin_CLI.pptx" target="_blank" rel="noopener">Slides →</a></div>
