@@ -1,0 +1,1 @@
+visitors.json (runtime data — safe to delete)

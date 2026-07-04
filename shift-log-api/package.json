@@ -1,0 +1,13 @@
+{
+  "name": "shift-log-api",
+  "version": "1.0.0",
+  "description": "REST API for a security/operations shift log (CRUD, filtering, validation).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "express": "^4.22.2"
+  }
+}

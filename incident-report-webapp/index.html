@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Incident Report Log</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Incident Report Log</h1><p>Front-end demo — vanilla HTML/CSS/JS, saves to your browser.</p></header>
+  <main>
+    <section class="card">
+      <h2>New entry</h2>
+      <form id="form">
+        <label>Title <input id="title" required placeholder="e.g. Alarm triggered, Gate B"></label>
+        <label>Category
+          <select id="category">
+            <option>Access Control</option><option>Alarm Response</option>
+            <option>Patrol Finding</option><option>Equipment Fault</option><option>Visitor Incident</option>
+          </select>
+        </label>
+        <label>Priority
+          <select id="priority"><option>low</option><option selected>medium</option><option>high</option></select>
+        </label>
+        <label>Notes <textarea id="notes" rows="2"></textarea></label>
+        <button type="submit">Add entry</button>
+      </form>
+    </section>
+    <section class="card">
+      <div class="row">
+        <h2>Log</h2>
+        <input id="search" placeholder="Filter by text or category…">
+      </div>
+      <div id="stats" class="stats"></div>
+      <table id="table"><thead><tr><th>Time</th><th>Title</th><th>Category</th><th>Priority</th><th></th></tr></thead><tbody></tbody></table>
+      <p id="empty" class="empty">No entries yet.</p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
